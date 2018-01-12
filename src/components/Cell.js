@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import './Column.css'
 
 class Cell extends Component {
+	// CHECK IF CLICKED CELL HAS A SHIP OR NOT
 	hit(e){
-		var targetId = e.target.id
-		document.getElementById(targetId).style.backgroundColor = "red"
+		var target = document.getElementById(e.target.id)
+		if(target.classList.contains("cellship")){
+			target.style.backgroundColor = "red"
+		} else {
+			target.style.backgroundColor = "gray"
+		}
 	}
 	render(){
 		return(
