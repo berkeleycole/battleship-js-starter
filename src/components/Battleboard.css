@@ -1,0 +1,15 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#battleboard {
+	display: flex;
+}
+
+#battleboard div {
+	border: 1px solid black;
+	min-height: 80px;
+	min-width: 80px;
+}
